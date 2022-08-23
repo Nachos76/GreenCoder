@@ -87,7 +87,9 @@ export class FormularioInscripcionesComponent implements OnInit {
   }
 
   compararxId(o1: any, o2: any) {
-    return o1.id == o2.id;
+    if (o1 && o2)
+        return o1.id == o2.id;
+    else return false;
   }
 
   cancelar() {

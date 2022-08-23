@@ -3,8 +3,7 @@
     <app-titulo-grilla
       [titulo]="titulo"
       [incluirNuevo]="true"
-      (click)="agregar()"
-      [incluirVolver]="false"></app-titulo-grilla>
+      (nuevoClicked)="agregar()"></app-titulo-grilla>
     <div
       [ngClass]="(loading$ | async) ? 'hidden' : 'block'"
       class="flex flex-col -mx-4 sm:-mx-8 px-4 sm:px-8">
